@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsUI", "StarWarsUI\StarWarsUI.csproj", "{90A23BE2-91B1-4541-A96A-72F8679AB5D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsModel", "StarWarsModel\StarWarsModel.csproj", "{CED47E60-F094-42F9-A1E7-B3FDA270ABFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsDL", "StarWarsDL\StarWarsDL.csproj", "{2FFAC79B-946D-482B-8025-8859B7C79339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsBL", "StarWarsBL\StarWarsBL.csproj", "{4DF53AC0-7393-4837-8C62-1C2AF81D542B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90A23BE2-91B1-4541-A96A-72F8679AB5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A23BE2-91B1-4541-A96A-72F8679AB5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A23BE2-91B1-4541-A96A-72F8679AB5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A23BE2-91B1-4541-A96A-72F8679AB5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED47E60-F094-42F9-A1E7-B3FDA270ABFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED47E60-F094-42F9-A1E7-B3FDA270ABFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED47E60-F094-42F9-A1E7-B3FDA270ABFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED47E60-F094-42F9-A1E7-B3FDA270ABFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FFAC79B-946D-482B-8025-8859B7C79339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FFAC79B-946D-482B-8025-8859B7C79339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FFAC79B-946D-482B-8025-8859B7C79339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FFAC79B-946D-482B-8025-8859B7C79339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF53AC0-7393-4837-8C62-1C2AF81D542B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF53AC0-7393-4837-8C62-1C2AF81D542B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF53AC0-7393-4837-8C62-1C2AF81D542B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF53AC0-7393-4837-8C62-1C2AF81D542B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
