@@ -12,9 +12,10 @@ namespace StarWarsUI{
         public void Display()
         {
             Console.WriteLine("Enter Customer information");
-            Console.WriteLine("[5] Name - " + _newCustomer.Name);
-            Console.WriteLine("[4] Address - " + _newCustomer.Address);
-            Console.WriteLine("[3] Phone Number - "+_newCustomer.Number);
+            Console.WriteLine("[6] Name - " + _newCustomer.Name);
+            Console.WriteLine("[5] Address - " + _newCustomer.Address);
+            Console.WriteLine("[4] Phone Number - "+_newCustomer.Number);
+            Console.WriteLine("[3] Email - " + _newCustomer.Email);
             // add list of orders once orders is created
             Console.WriteLine("[1] Save");
             Console.WriteLine("[0] Go Back");
@@ -30,14 +31,18 @@ namespace StarWarsUI{
                     _customerBL.AddCustomer(_newCustomer);
                     return "MainMenu";
                 case "3":
+                    Console.WriteLine("Please enter email address");
+                    _newCustomer.Email = Console.ReadLine();
+                    return "AddCustomer";
+                case "4":
                     Console.WriteLine("Please enter a phone number");
                     _newCustomer.Number = Console.ReadLine();
                     return "AddCustomer";
-                case "4":
+                case "5":
                     Console.WriteLine("Please enter an address");
                     _newCustomer.Address = Console.ReadLine();
                     return "AddCustomer";
-                case "5":
+                case "6":
                     Console.WriteLine("Please enter a name");
                     _newCustomer.Name = Console.ReadLine();
                     return "AddCustomer";

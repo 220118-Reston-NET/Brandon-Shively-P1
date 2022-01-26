@@ -1,12 +1,14 @@
 [
   {
-    "Name": "Brandon",
-    "Address": "Dolphin Way",
-    "Number": "888-888-8888"
+    "Name": "Arthur",
+    "Address": "Vagabond",
+    "Number": "None",
+    "Email": "None"
   },
   {
     "Name": "John",
     "Address": "Beech Ranch",
-    "Number": "555-555-5555"
+    "Number": "555-555-5555",
+    "Email": "aksdjkf@gmail.com"
   }
 ]

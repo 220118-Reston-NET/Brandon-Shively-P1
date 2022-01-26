@@ -18,6 +18,9 @@ while (repeat){
             menu = new AddCustomer(new StarWarsStoreBL(new Repository()));
             break;
         case "SearchCustomer":
+            menu = new SearchCustomer(new StarWarsStoreBL(new Repository()));
+            break;
+        case "ViewProducts":
             break;
         case "Exit":
             Console.Clear();
