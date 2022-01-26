@@ -10,8 +10,7 @@ while (repeat){
     Console.Clear();
     menu.Display();
     string _ans = menu.UserChoice();
-    switch (_ans)
-    {
+    switch (_ans){
         case "MainMenu":
             menu = new MainMenu();
             break;

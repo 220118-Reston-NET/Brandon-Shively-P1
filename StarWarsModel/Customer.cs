@@ -2,15 +2,13 @@ namespace StarWarsModel{
     public class Customer
     {
         private string _name;
-        public string Name{
-            get { return _name; }
-            set { _name = value; }
-        }
-
+        public string Name { get; set; }
         private string _address;
-        public string Address{
-            get { return _address; }
-            set { _address = value; }
+        public string Address { get; set; }
+        private string _number;
+        public string Number { get; set; }
+        public Customer(){
+
         }
     }
 }
