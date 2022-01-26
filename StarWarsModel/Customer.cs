@@ -8,7 +8,9 @@ namespace StarWarsModel{
         private string _number;
         public string Number { get; set; }
         public Customer(){
-
+            Name = "Brandon";
+            Address = "Dolphin Way";
+            Number = "888-888-8888";
         }
     }
 }

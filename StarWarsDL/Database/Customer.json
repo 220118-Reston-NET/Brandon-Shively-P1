@@ -1,4 +1,12 @@
-{
-  "Name": null,
-  "Address": null
-}
+[
+  {
+    "Name": "Brandon",
+    "Address": "Dolphin Way",
+    "Number": "888-888-8888"
+  },
+  {
+    "Name": "John",
+    "Address": "Beech Ranch",
+    "Number": "555-555-5555"
+  }
+]
