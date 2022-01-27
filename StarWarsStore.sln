@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsDL", "StarWarsDL\St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsBL", "StarWarsBL\StarWarsBL.csproj", "{4DF53AC0-7393-4837-8C62-1C2AF81D542B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsTest", "StarWarsTest\StarWarsTest.csproj", "{28008185-0B2B-42FB-888E-914D5B090529}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{4DF53AC0-7393-4837-8C62-1C2AF81D542B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DF53AC0-7393-4837-8C62-1C2AF81D542B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DF53AC0-7393-4837-8C62-1C2AF81D542B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28008185-0B2B-42FB-888E-914D5B090529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28008185-0B2B-42FB-888E-914D5B090529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28008185-0B2B-42FB-888E-914D5B090529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28008185-0B2B-42FB-888E-914D5B090529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
