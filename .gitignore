@@ -1,2 +1,5 @@
 bin
 obj
+StarWarsUI/appsettings.json
+StarWarsApi/appsettings.json
+StarWarsApi/publish

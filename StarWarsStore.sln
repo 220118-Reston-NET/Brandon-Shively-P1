@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsUI", "StarWarsUI\StarWarsUI.csproj", "{90A23BE2-91B1-4541-A96A-72F8679AB5D5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsModel", "StarWarsModel\StarWarsModel.csproj", "{CED47E60-F094-42F9-A1E7-B3FDA270ABFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsDL", "StarWarsDL\StarWarsDL.csproj", "{2FFAC79B-946D-482B-8025-8859B7C79339}"
@@ -12,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsBL", "StarWarsBL\StarWarsBL.csproj", "{4DF53AC0-7393-4837-8C62-1C2AF81D542B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsTest", "StarWarsTest\StarWarsTest.csproj", "{28008185-0B2B-42FB-888E-914D5B090529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsApi", "StarWarsApi\StarWarsApi.csproj", "{87B0422D-7F63-477D-AC85-1B96F1C17D5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +42,9 @@ Global
 		{28008185-0B2B-42FB-888E-914D5B090529}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28008185-0B2B-42FB-888E-914D5B090529}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28008185-0B2B-42FB-888E-914D5B090529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B0422D-7F63-477D-AC85-1B96F1C17D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B0422D-7F63-477D-AC85-1B96F1C17D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B0422D-7F63-477D-AC85-1B96F1C17D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B0422D-7F63-477D-AC85-1B96F1C17D5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

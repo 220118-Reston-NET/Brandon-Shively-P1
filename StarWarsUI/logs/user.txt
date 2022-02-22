@@ -1,0 +1,221 @@
+2022-02-15 12:16:24.038 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-15 12:16:33.106 -05:00 [INF] Updating the new customer's name to: Dittrich
+2022-02-15 12:16:33.106 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-15 12:16:44.394 -05:00 [INF] Updating the new customer's Address to: Gainesville, FL
+2022-02-15 12:16:44.394 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-15 12:16:52.538 -05:00 [INF] Updating the new customer's number to: 123-456-7899
+2022-02-15 12:16:52.538 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-15 12:16:54.313 -05:00 [INF] Updating the new customer's email to: 
+2022-02-15 12:16:54.314 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-15 12:17:07.521 -05:00 [INF] Updating the new customer's email to: 
+2022-02-15 12:17:07.521 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-15 12:17:13.273 -05:00 [INF] Updating the new customer's email to: null
+2022-02-15 12:17:13.273 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-15 12:17:15.609 -05:00 [INF] Updating the new customer's email to: 
+2022-02-15 12:17:15.609 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-15 12:17:17.209 -05:00 [INF] Adding new customerDittrich
+2022-02-15 12:17:18.133 -05:00 [INF] Successful at adding new customer
+2022-02-15 12:17:18.133 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-15 12:17:21.977 -05:00 [INF] Exiting Application.
+2022-02-15 12:32:00.662 -05:00 [INF] Displaying the Store Selection Screen.
+2022-02-15 12:32:03.610 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-15 12:32:04.594 -05:00 [INF] Displaying Products avaliable for purchase at the Fairbanks Store.
+2022-02-15 12:32:10.443 -05:00 [INF] User has successfully added 15Boba Fett Figurine to their shopping cart.
+2022-02-15 12:32:13.410 -05:00 [INF] User selected an option the returned no page.
+2022-02-15 12:32:15.090 -05:00 [INF] User has opted to return to the shopping menu without adding anything to their shopping cart.
+2022-02-15 12:32:15.090 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-15 12:32:16.426 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-15 12:32:17.538 -05:00 [INF] Exiting Application.
+2022-02-15 12:41:23.159 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-15 12:41:24.683 -05:00 [INF] User has selected to search a customer by name.
+2022-02-15 12:41:27.968 -05:00 [INF] A customer matching the user inputed response was not found; returning user to SearchCustomer Menu.
+2022-02-15 12:41:30.546 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-15 12:41:32.010 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-15 12:41:32.010 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-15 12:41:33.154 -05:00 [INF] Exiting Application.
+2022-02-15 17:06:47.329 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-15 17:06:48.437 -05:00 [INF] User has selected to search a customer by name.
+2022-02-15 17:06:50.101 -05:00 [INF] User is searching for a customer by the name: Brandon
+2022-02-15 17:06:50.987 -05:00 [INF] Brandon successfully found in database.
+2022-02-15 17:06:51.645 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-15 17:06:52.845 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-15 17:06:53.509 -05:00 [INF] User has selected to search a customer by name.
+2022-02-15 17:06:55.501 -05:00 [INF] User is searching for a customer by the name: John
+2022-02-15 17:06:55.555 -05:00 [INF] A customer matching the user inputed response was not found; returning user to SearchCustomer Menu.
+2022-02-15 17:06:58.005 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-15 17:07:01.277 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-15 17:07:01.277 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-15 17:07:03.997 -05:00 [INF] Displaying the Store Selection Screen.
+2022-02-15 17:07:04.740 -05:00 [INF] User has selected to search a store by store name.
+2022-02-15 17:07:07.077 -05:00 [INF] User is searching for a store by the name: Texas
+2022-02-15 17:07:07.119 -05:00 [INF] A store that matched the user inputed name was not found; returning user to search for a store.
+2022-02-15 17:07:08.613 -05:00 [INF] User selected an option the returned no page.
+2022-02-15 17:07:09.484 -05:00 [INF] User has selected to search a store by store name.
+2022-02-15 17:07:11.045 -05:00 [INF] User is searching for a store by the name: Fairbanks
+2022-02-15 17:07:11.517 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-15 17:07:14.365 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-15 17:07:14.365 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-15 17:07:16.724 -05:00 [INF] Displaying the Store Selection Screen.
+2022-02-15 17:07:17.396 -05:00 [INF] User has selected to search a store by store name.
+2022-02-15 17:07:18.908 -05:00 [INF] User is searching for a store by the name: Texas
+2022-02-15 17:07:18.958 -05:00 [INF] A store that matched the user inputed name was not found; returning user to search for a store.
+2022-02-15 17:07:19.652 -05:00 [INF] User selected an option the returned no page.
+2022-02-15 17:07:21.668 -05:00 [INF] User has selected to shop at the Fairbanks Store
+2022-02-15 17:07:21.669 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-15 17:07:22.805 -05:00 [INF] User has selected to view the products avaliable at the Fairbanks Store
+2022-02-15 17:07:22.805 -05:00 [INF] Displaying Products avaliable for purchase at the Fairbanks Store.
+2022-02-15 17:07:28.317 -05:00 [INF] User has successfully added 10 Boba Fett Figurine to their shopping cart.
+2022-02-15 17:07:29.037 -05:00 [INF] User selected an option the returned no page.
+2022-02-15 17:07:30.965 -05:00 [INF] User has opted to return to the shopping menu without adding anything to their shopping cart.
+2022-02-15 17:07:30.966 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-15 17:07:32.276 -05:00 [INF] User has selected to view their shopping cart.
+2022-02-15 17:07:32.277 -05:00 [INF] Displaying the shopping cart for Brandon.
+2022-02-15 17:07:36.365 -05:00 [INF] User has selected to adjust their order.
+2022-02-15 17:07:41.716 -05:00 [INF] User has selected to update the order for Boba Fett Figurineto5
+2022-02-15 17:07:41.716 -05:00 [INF] Displaying the shopping cart for Brandon.
+2022-02-15 17:07:46.884 -05:00 [INF] User has selected to adjust their order.
+2022-02-15 17:07:50.676 -05:00 [INF] User has selected to update the order for Boba Fett Figurineto1
+2022-02-15 17:07:50.676 -05:00 [INF] Displaying the shopping cart for Brandon.
+2022-02-15 17:07:58.324 -05:00 [INF] User has selected to completely clear their shopping cart.
+2022-02-15 17:08:00.148 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-15 17:08:03.348 -05:00 [INF] Displaying the OrderHistory menu to user.
+2022-02-15 17:08:05.276 -05:00 [INF] User has selected to view a customer's order history.  The customer choosen is: Brandon
+2022-02-15 17:08:13.444 -05:00 [INF] Displaying the OrderHistory menu to user.
+2022-02-15 17:08:15.252 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-15 17:08:18.812 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-15 17:08:24.372 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-15 17:08:26.036 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-15 17:08:27.420 -05:00 [INF] Exiting Application.
+2022-02-16 09:07:53.134 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 09:07:55.730 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 09:07:57.154 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-16 09:07:58.122 -05:00 [INF] User has selected to search a customer by name.
+2022-02-16 09:07:59.490 -05:00 [INF] User is searching for a customer by the name: Brandon
+2022-02-16 09:08:00.494 -05:00 [INF] A customer matching the user inputed response was not found; returning user to SearchCustomer Menu.
+2022-02-16 09:08:04.970 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-16 09:08:05.938 -05:00 [INF] User has selected to search a customer by name.
+2022-02-16 09:08:07.370 -05:00 [INF] User is searching for a customer by the name: TJ
+2022-02-16 09:08:09.111 -05:00 [INF] A customer matching the user inputed response was not found; returning user to SearchCustomer Menu.
+2022-02-16 09:08:09.626 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-16 09:08:10.866 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-16 09:08:10.866 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 09:08:12.090 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 09:08:18.323 -05:00 [INF] Updating the new customer's name to: Troy
+2022-02-16 09:08:18.323 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 09:08:20.498 -05:00 [INF] Adding new customerTroy
+2022-02-16 09:08:20.909 -05:00 [INF] Adding new customerTroy
+2022-02-16 09:08:24.042 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 09:08:25.106 -05:00 [INF] Exiting Application.
+2022-02-16 09:14:09.630 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 09:14:13.874 -05:00 [INF] Updating the new customer's name to: Troy
+2022-02-16 09:14:13.875 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 09:14:15.602 -05:00 [INF] Adding new customerTroy
+2022-02-16 09:14:16.440 -05:00 [INF] Adding new customerTroy
+2022-02-16 09:18:03.802 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 09:18:05.818 -05:00 [INF] Exiting Application.
+2022-02-16 09:18:18.654 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 09:18:23.818 -05:00 [INF] Updating the new customer's name to: Troy
+2022-02-16 09:18:23.818 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 09:18:28.110 -05:00 [INF] Updating the new customer's Address to: 4568645\
+2022-02-16 09:18:28.110 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 09:18:30.586 -05:00 [INF] Updating the new customer's number to: 546235
+2022-02-16 09:18:30.586 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 09:18:32.634 -05:00 [INF] Updating the new customer's email to: afjklsd
+2022-02-16 09:18:32.635 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 09:18:33.794 -05:00 [INF] Adding new customerTroy
+2022-02-16 09:18:34.665 -05:00 [INF] Successful at adding new customer
+2022-02-16 09:18:34.665 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 09:18:41.114 -05:00 [INF] Exiting Application.
+2022-02-16 09:57:19.881 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-16 09:57:20.799 -05:00 [INF] User has selected to search a customer by name.
+2022-02-16 09:57:22.479 -05:00 [INF] User is searching for a customer by the name: Brandon
+2022-02-16 09:57:23.477 -05:00 [INF] Brandon successfully found in database.
+2022-02-16 09:57:25.327 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 09:57:26.615 -05:00 [INF] Exiting Application.
+2022-02-16 10:02:33.890 -05:00 [INF] Displaying the OrderHistory menu to user.
+2022-02-16 10:02:35.031 -05:00 [INF] User has selected to view the store order history for 
+2022-02-16 10:02:38.295 -05:00 [INF] Displaying the OrderHistory menu to user.
+2022-02-16 10:02:39.631 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-16 10:02:40.567 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 10:02:42.879 -05:00 [INF] Displaying the Store Selection Screen.
+2022-02-16 10:02:44.071 -05:00 [INF] User has selected to search a store by store name.
+2022-02-16 10:02:46.256 -05:00 [INF] User is searching for a store by the name: Anchorage
+2022-02-16 10:02:46.719 -05:00 [INF] Displaying the Menu for shopping at the Anchorage Store.
+2022-02-16 10:02:48.335 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-16 10:02:48.335 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 10:02:49.735 -05:00 [INF] Displaying the OrderHistory menu to user.
+2022-02-16 10:02:50.463 -05:00 [INF] User has selected to view the store order history for Anchorage Store
+2022-02-16 10:03:15.551 -05:00 [INF] Displaying the OrderHistory menu to user.
+2022-02-16 10:03:17.703 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-16 10:03:19.359 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 10:29:39.328 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-16 10:29:41.341 -05:00 [INF] User did not input a valid response.
+2022-02-16 12:48:18.974 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 12:48:26.843 -05:00 [INF] Updating the new customer's name to: Cullen
+2022-02-16 12:48:26.843 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 12:48:32.601 -05:00 [INF] Updating the new customer's Address to: 123 Street st
+2022-02-16 12:48:32.601 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 12:48:37.233 -05:00 [INF] Updating the new customer's number to: 125252525
+2022-02-16 12:48:37.234 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 12:48:41.873 -05:00 [INF] Updating the new customer's email to: cullen@gmail.com
+2022-02-16 12:48:41.874 -05:00 [INF] Displaying the AddCustomer Menu to user.
+2022-02-16 12:48:44.777 -05:00 [INF] Adding new customerCullen
+2022-02-16 12:48:45.960 -05:00 [INF] Successful at adding new customer
+2022-02-16 12:48:45.960 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 12:49:03.736 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-16 12:49:05.808 -05:00 [INF] User has selected to search a customer by name.
+2022-02-16 12:49:07.944 -05:00 [INF] User is searching for a customer by the name: cullen
+2022-02-16 12:49:08.056 -05:00 [INF] A customer matching the user inputed response was not found; returning user to SearchCustomer Menu.
+2022-02-16 12:49:12.561 -05:00 [INF] Displaying the SearchCustomer Menu to user.
+2022-02-16 12:49:13.328 -05:00 [INF] User has selected to search a customer by name.
+2022-02-16 12:49:14.425 -05:00 [INF] User is searching for a customer by the name: Cullen
+2022-02-16 12:49:14.490 -05:00 [INF] Cullen successfully found in database.
+2022-02-16 12:49:19.505 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 12:49:22.424 -05:00 [INF] Displaying the Store Selection Screen.
+2022-02-16 12:49:33.224 -05:00 [INF] User has selected to search a store by store name.
+2022-02-16 12:49:35.976 -05:00 [INF] User is searching for a store by the name: Fairbanks
+2022-02-16 12:49:39.625 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-16 12:49:49.240 -05:00 [INF] User has selected to view the products avaliable at the Fairbanks Store
+2022-02-16 12:49:49.241 -05:00 [INF] Displaying Products avaliable for purchase at the Fairbanks Store.
+2022-02-16 12:50:10.297 -05:00 [INF] User has successfully added 60 Boba Fett Figurine to their shopping cart.
+2022-02-16 12:50:33.608 -05:00 [INF] User selected an option the returned no page.
+2022-02-16 12:50:38.008 -05:00 [INF] User has opted to return to the shopping menu without adding anything to their shopping cart.
+2022-02-16 12:50:38.009 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-16 12:50:39.329 -05:00 [INF] User has selected to view their shopping cart.
+2022-02-16 12:50:39.329 -05:00 [INF] Displaying the shopping cart for Cullen.
+2022-02-16 12:50:43.929 -05:00 [INF] User has selected to adjust their order.
+2022-02-16 12:50:48.736 -05:00 [INF] User has selected to update the order for Boba Fett Figurineto40
+2022-02-16 12:50:48.737 -05:00 [INF] Displaying the shopping cart for Cullen.
+2022-02-16 12:51:02.490 -05:00 [INF] User has placed an order.
+2022-02-16 12:51:02.893 -05:00 [INF] Order succesfully placed!
+2022-02-16 12:51:02.893 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 12:51:09.305 -05:00 [INF] Displaying the OrderHistory menu to user.
+2022-02-16 12:51:20.232 -05:00 [INF] User has selected to view a customer's order history.  The customer choosen is: Cullen
+2022-02-16 12:51:28.816 -05:00 [INF] Displaying the OrderHistory menu to user.
+2022-02-16 12:51:31.281 -05:00 [INF] User has selected to view the store order history for Fairbanks Store
+2022-02-16 12:51:39.208 -05:00 [INF] Displaying the OrderHistory menu to user.
+2022-02-16 12:51:40.568 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-16 12:51:41.712 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-16 12:51:44.968 -05:00 [INF] Displaying the ReplenishInventory Menu to user.
+2022-02-16 12:52:05.353 -05:00 [INF] User has selected to replenish store inventory for Fairbanks Store
+2022-02-16 12:52:22.693 -05:00 [INF] Displaying the ReplenishInventory Menu to user.
+2022-02-16 12:52:24.392 -05:00 [INF] User has choosen to select a store to replenish the inventory for.
+2022-02-16 12:52:28.003 -05:00 [INF] The store selected is the Anchorage Store
+2022-02-16 12:52:30.552 -05:00 [INF] Displaying the ReplenishInventory Menu to user.
+2022-02-16 12:52:33.328 -05:00 [INF] User has selected to replenish store inventory for Anchorage Store
+2022-02-16 12:53:01.101 -05:00 [INF] Exiting Application.
+2022-02-16 12:57:18.509 -05:00 [INF] Displaying the ReplenishInventory Menu to user.
+2022-02-16 12:57:20.144 -05:00 [INF] User has choosen to select a store to replenish the inventory for.
+2022-02-16 12:57:23.164 -05:00 [INF] The store selected is the Fairbanks Store
+2022-02-16 12:57:23.736 -05:00 [INF] Displaying the ReplenishInventory Menu to user.
+2022-02-16 12:57:25.192 -05:00 [INF] User has selected to replenish store inventory for Fairbanks Store
+2022-02-16 13:00:29.492 -05:00 [INF] Displaying the ReplenishInventory Menu to user.
+2022-02-16 13:00:30.128 -05:00 [INF] User has choosen to select a store to replenish the inventory for.
+2022-02-16 13:00:33.149 -05:00 [INF] The store selected is the Fairbanks Store
+2022-02-16 13:00:34.648 -05:00 [INF] Displaying the ReplenishInventory Menu to user.
+2022-02-16 13:00:35.656 -05:00 [INF] User has selected to replenish store inventory for Fairbanks Store
+2022-02-16 13:00:42.632 -05:00 [INF] User has selected to replenish 15 Boba Fett Figurine to Fairbanks Store
+2022-02-16 13:00:48.168 -05:00 [INF] Displaying the ReplenishInventory Menu to user.
+2022-02-16 13:00:50.152 -05:00 [INF] User has selected to return to the Main Menu.
+2022-02-16 13:00:50.152 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-21 16:49:09.975 -05:00 [INF] Exiting Application.
