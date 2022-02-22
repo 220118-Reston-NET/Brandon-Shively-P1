@@ -1,9 +1,16 @@
 namespace StarWarsModel{
-    public class LineItem{
-        private string _name;
-        public string Name { get; set; }
-        private string _price;
-        public string Price { get; set; }
-        public List<string[]> LineItems = new List<string[]>();
+    public class LineItems{
+        //build dictionary with StoreID key and ProductID value
+        public int _productID { get; set; }
+        public string _productName { get; set; }
+        public float _productPrice { get; set; }
+        public int _lineItemID { get; set; }
+        public int _orderID { get; set; }
+        public int _storeID { get; set; }
+        public int _quantity { get; set; }
+
+        public override string ToString(){
+            return $"ID: {_productID}\nName: {_productName}\nPrice: ${_productPrice}\nQuantity: {_quantity}";
+        }
     }
 }
