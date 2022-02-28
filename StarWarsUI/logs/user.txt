@@ -219,3 +219,51 @@
 2022-02-16 13:00:50.152 -05:00 [INF] User has selected to return to the Main Menu.
 2022-02-16 13:00:50.152 -05:00 [INF] Displaying the MainMenu to user.
 2022-02-21 16:49:09.975 -05:00 [INF] Exiting Application.
+2022-02-23 17:02:08.589 -05:00 [INF] Displaying the Store Selection Screen.
+2022-02-23 17:02:09.400 -05:00 [INF] User has selected to search a store by store name.
+2022-02-23 17:02:10.809 -05:00 [INF] User is searching for a store by the name: Fairbanks
+2022-02-23 17:02:11.904 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-23 17:02:12.856 -05:00 [INF] User has selected to view the products avaliable at the Fairbanks Store
+2022-02-23 17:02:12.856 -05:00 [INF] Displaying Products avaliable for purchase at the Fairbanks Store.
+2022-02-23 17:02:20.049 -05:00 [INF] User has successfully added 70 Boba Fett Figurine to their shopping cart.
+2022-02-23 17:02:21.552 -05:00 [INF] User selected an option the returned no page.
+2022-02-23 17:02:22.816 -05:00 [INF] User has opted to return to the shopping menu without adding anything to their shopping cart.
+2022-02-23 17:02:22.816 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-23 17:02:23.872 -05:00 [INF] User has selected to view their shopping cart.
+2022-02-23 17:02:23.872 -05:00 [INF] Displaying the shopping cart for .
+2022-02-23 17:02:25.600 -05:00 [INF] User has selected to completely clear their shopping cart.
+2022-02-23 17:02:26.928 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-23 17:02:27.720 -05:00 [INF] Exiting Application.
+2022-02-23 17:04:31.763 -05:00 [INF] Displaying the Store Selection Screen.
+2022-02-23 17:04:32.382 -05:00 [INF] User has selected to search a store by store name.
+2022-02-23 17:04:33.910 -05:00 [INF] User is searching for a store by the name: Fairbanks
+2022-02-23 17:04:34.862 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-23 17:04:35.622 -05:00 [INF] User has selected to view the products avaliable at the Fairbanks Store
+2022-02-23 17:04:35.622 -05:00 [INF] Displaying Products avaliable for purchase at the Fairbanks Store.
+2022-02-23 17:04:37.671 -05:00 [INF] User selected an option the returned no page.
+2022-02-23 17:04:48.642 -05:00 [INF] User has opted to return to the shopping menu without adding anything to their shopping cart.
+2022-02-23 17:04:48.643 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-23 17:05:13.498 -05:00 [INF] Displaying the Store Selection Screen.
+2022-02-23 17:05:13.789 -05:00 [INF] User has selected to search a store by store name.
+2022-02-23 17:05:15.269 -05:00 [INF] User is searching for a store by the name: Fairbanks
+2022-02-23 17:05:15.948 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-23 17:05:16.877 -05:00 [INF] User has selected to view the products avaliable at the Fairbanks Store
+2022-02-23 17:05:16.877 -05:00 [INF] Displaying Products avaliable for purchase at the Fairbanks Store.
+2022-02-23 17:05:20.085 -05:00 [INF] User selected an option the returned no page.
+2022-02-23 17:05:31.229 -05:00 [INF] User selected an option the returned no page.
+2022-02-23 17:05:32.645 -05:00 [INF] User has opted to return to the shopping menu without adding anything to their shopping cart.
+2022-02-23 17:05:32.645 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-23 17:05:33.589 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-23 17:05:33.589 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-23 17:05:34.533 -05:00 [INF] Exiting Application.
+2022-02-24 16:15:28.640 -05:00 [INF] Displaying the Store Selection Screen.
+2022-02-24 16:15:29.355 -05:00 [INF] User has selected to search a store by store name.
+2022-02-24 16:15:31.451 -05:00 [INF] User is searching for a store by the name: Fairbanks
+2022-02-24 16:15:32.667 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-24 16:15:33.787 -05:00 [INF] User has selected to view the products avaliable at the Fairbanks Store
+2022-02-24 16:15:33.787 -05:00 [INF] Displaying Products avaliable for purchase at the Fairbanks Store.
+2022-02-24 16:15:36.851 -05:00 [INF] User has opted to return to the shopping menu without adding anything to their shopping cart.
+2022-02-24 16:15:36.851 -05:00 [INF] Displaying the Menu for shopping at the Fairbanks Store.
+2022-02-24 16:56:21.380 -05:00 [INF] User has selected to return to the MainMenu.
+2022-02-24 16:56:21.381 -05:00 [INF] Displaying the MainMenu to user.
+2022-02-24 16:56:23.292 -05:00 [INF] Exiting Application.

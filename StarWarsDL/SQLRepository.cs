@@ -11,7 +11,7 @@ namespace StarWarsDL
 
         public Customer AddCustomer(Customer n_customer){
             string sqlQuery = @"insert into Customer 
-                            values(@CustomerName, @CustomerAddress, @CustomerNumber, @CustomerEmail)";
+                            values(@CustomerName, @CustomerAddress, @CustomerNumber, @CustomerEmail, @UserName, @Password)";
             using (SqlConnection con = new SqlConnection(_connectionStrings)){
                 con.Open();
                 SqlCommand command = new SqlCommand(sqlQuery, con);
@@ -19,6 +19,8 @@ namespace StarWarsDL
                 command.Parameters.AddWithValue("@CustomerAddress", n_customer.Address);
                 command.Parameters.AddWithValue("@CustomerNumber", n_customer.Number);
                 command.Parameters.AddWithValue("@CustomerEmail", n_customer.Email);
+                command.Parameters.AddWithValue("@Username", n_customer.UserName);
+                command.Parameters.AddWithValue("@Password", n_customer.Password);
 
                 command.ExecuteNonQuery();
             }
@@ -39,7 +41,7 @@ namespace StarWarsDL
         return n_storeFront;
         }
 
-        public List<Order> CustomerOrder(int p_CustomerID)
+        public List<Order> CustomerOrder(int p_CustomerID, string p_orderMethod)
         {
             List<Order> listOfCustomerOrder = new List<Order>();
             string sqlQuery = @$"SELECT co.OrderID, sf.StoreName, p.ProductName, lico.Quantity, co.Total from StoreFront sf
@@ -47,7 +49,8 @@ namespace StarWarsDL
                                 INNER JOIN LineItems_CustomerOrders lico on co.OrderID = lico.OrderID 
                                 INNER JOIN LineItem li on lico.LineItemID = li.LineItemID 
                                 INNER JOIN Product p on li.LineItemID = p.LineItemID 
-                                WHERE co.CustomerID = {p_CustomerID}";
+                                WHERE co.CustomerID = {p_CustomerID}
+                                ORDER BY co.{p_orderMethod} DESC";
             using (SqlConnection con = new SqlConnection(_connectionStrings)){
                 con.Open();
                 SqlCommand command = new SqlCommand(sqlQuery, con);
@@ -150,16 +153,39 @@ namespace StarWarsDL
         return listOfStores;
         }
 
+        public List<Manager> ManagerLogin(string p_userName, string p_password)
+        {
+            List<Manager> ManagerInformation = new List<Manager>();
+            string SqlQuery = @$"SELECT * FROM StoreManager sm 
+                                WHERE UserName = '{p_userName}' AND Password = '{p_password}'";
+            using (SqlConnection con = new SqlConnection(_connectionStrings)){
+                con.Open();
+                SqlCommand Command = new SqlCommand(SqlQuery, con);
+                SqlDataReader reader = Command.ExecuteReader();
+                while (reader.Read()){
+                    ManagerInformation.Add(new Manager(){
+                        _ID = reader.GetInt32(0),
+                        Name = reader.GetString(1),
+                        Number = reader.GetString(2),
+                        Email = reader.GetString(3),
+                        _storeID = reader.GetInt32(6),
+                    });
+                }
+
+            }
+            return ManagerInformation;
+        }
+
         public List<ShoppingCart> PlaceOrder(int p_ID, float p_Price, int p_Quantity, int p_StoreID, int p_CustomerID)
         {
-            string sqlQuery = @$"INSERT CustomerOrder  VALUES(@StoreID, @CustomerID, @Total)
+            string sqlQuery = @$"INSERT CustomerOrder  VALUES(@StoreID, @CustomerID, @Total, getdate())
                                 INSERT LineItems_CustomerOrders  VALUES(@LineItemID, @Quantity)
                                 UPDATE LineItem  set Quantity = Quantity - {p_Quantity} WHERE LineItem.LineItemID = {p_ID}
                                 SELECT co.OrderID, c.CustomerName, lico.Quantity, p.ProductID, p.ProductName From Customer c
                                 INNER JOIN CustomerOrder co on c.CustomerID = co.CustomerID 
                                 INNER JOIN LineItems_CustomerOrders lico on co.OrderID = lico.OrderID 
                                 INNER JOIN LineItem li on lico.LineItemID = li.LineItemID 
-                                INNER JOIN Product p on li.ProductID = p.ProductID 
+                                INNER JOIN Product p on li.LineItemID = p.LineItemID 
                                 WHERE c.CustomerID = {p_CustomerID}";
             using (SqlConnection con = new SqlConnection(_connectionStrings)){
                 con.Open();
@@ -197,15 +223,16 @@ namespace StarWarsDL
         return listOfStoreProducts;
         }
 
-        public List<Order> StoreOrder(int p_StoreID)
+        public List<Order> StoreOrder(int p_StoreID, string p_orderMethod)
         {
             List<Order> listOfCustomerOrder = new List<Order>();
             string sqlQuery = @$"SELECT co.OrderID, c.CustomerName, p.ProductName, li.LineItemID, lico.Quantity, co.Total from Customer c
                                 INNER JOIN CustomerOrder co on c.CustomerID = co.CustomerID 
                                 INNER JOIN LineItems_CustomerOrders lico on co.OrderID = lico.OrderID 
                                 INNER JOIN LineItem li on lico.LineItemID = li.LineItemID 
-                                INNER JOIN Product p on li.ProductID = p.ProductID 
-                                WHERE co.StoreID = {p_StoreID}";
+                                INNER JOIN Product p on li.LineItemID = p.LineItemID 
+                                WHERE co.StoreID = {p_StoreID}
+                                ORDER BY co.{p_orderMethod} DESC";
             using (SqlConnection con = new SqlConnection(_connectionStrings)){
                 con.Open();
                 SqlCommand command = new SqlCommand(sqlQuery, con);
@@ -222,6 +249,27 @@ namespace StarWarsDL
                 }
             }
         return listOfCustomerOrder;
+        }
+        public List<Customer> CustomerLogin(string p_userName, string p_password){
+            List<Customer> CustomerInformation = new List<Customer>();
+            string SqlQuery = @$"SELECT * FROM Customer sm 
+                                WHERE UserName = '{p_userName}' AND Password = '{p_password}'";
+            using (SqlConnection con = new SqlConnection(_connectionStrings)){
+                con.Open();
+                SqlCommand Command = new SqlCommand(SqlQuery, con);
+                SqlDataReader reader = Command.ExecuteReader();
+                while (reader.Read()){
+                    CustomerInformation.Add(new Customer(){
+                        _customerID = reader.GetInt32(0),
+                        Name = reader.GetString(1),
+                        Address = reader.GetString(2),
+                        Number = reader.GetString(3),
+                        Email = reader.GetString(4),
+                    });
+                }
+
+            }
+            return CustomerInformation;
         }
     }
 }

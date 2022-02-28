@@ -9,6 +9,10 @@ namespace StarWarsModel{
         public string Number { get; set; }
         private string _email;
         public string Email { get; set; }  
+        private string _userName;
+        public string UserName { get; set; }
+        private string _password;
+        public string Password { get; set; }
 
         public override string ToString(){
             return $"Name: {Name}\nAddress: {Address}\nNumber: {Number}\nEmail: {Email}";

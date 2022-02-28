@@ -33,16 +33,23 @@ namespace StarWarsUI{
                 if (j == listOfProducts[i]._lineItemID){
                     Console.WriteLine($"How many {listOfProducts[i]._productName} would you like to order?");
                     int _quantityChoice = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"{_quantityChoice} {listOfProducts[i]._productName} have been added to your cart.");
-                    Log.Information($"User has successfully added {_quantityChoice} {listOfProducts[i]._productName} to their shopping cart.");
-                    _addItem._lineItemID = listOfProducts[i]._lineItemID;
-                    _currentCart.Add(_addItem._lineItemID);
-                    _currentCartName.Add(listOfProducts[i]._productName);
-                    _currentCartQuantity.Add(_quantityChoice);
-                    _currentCartPrice.Add(listOfProducts[i]._productPrice);
-                    Console.WriteLine("Press Enter to continue");
-                    Console.ReadLine();
-                    return "ListItems";
+                    if(_quantityChoice <= listOfProducts[i]._quantity){
+                        Console.WriteLine($"{_quantityChoice} {listOfProducts[i]._productName} have been added to your cart.");
+                        Log.Information($"User has successfully added {_quantityChoice} {listOfProducts[i]._productName} to their shopping cart.");
+                        _addItem._lineItemID = listOfProducts[i]._lineItemID;
+                        _currentCart.Add(_addItem._lineItemID);
+                        _currentCartName.Add(listOfProducts[i]._productName);
+                        _currentCartQuantity.Add(_quantityChoice);
+                        _currentCartPrice.Add(listOfProducts[i]._productPrice);
+                        Console.WriteLine("Press Enter to continue");
+                        Console.ReadLine();
+                        return "ListItems";
+                    }
+                    else{
+                        Console.WriteLine("We currently do not have that many in stock, returning to the store menu.");
+                        Console.ReadLine();
+                        return "ListItems";
+                    }
                 }
                 else if(j == 0){
                     Log.Information("User has opted to return to the shopping menu without adding anything to their shopping cart.");

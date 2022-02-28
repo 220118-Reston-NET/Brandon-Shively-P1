@@ -13,20 +13,19 @@ namespace StarWarsApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomerController : ControllerBase
+    public class StoreController : ControllerBase
     {
         private IStarWarsStoreBL _starWarsBL;
-        public CustomerController(IStarWarsStoreBL p_starwarsBL){
-            _starWarsBL = p_starwarsBL;
+        public StoreController(IStarWarsStoreBL p_starWarsBL){
+            _starWarsBL = p_starWarsBL;
         }
-
-        // GET: api/Customer
-        [HttpGet("GetAll")]
-        public IActionResult GetAllCustomers()
+        // GET: api/Store
+        [HttpGet]
+        public IActionResult GetAllStores()
         {
             try
             {
-                return Ok(_starWarsBL.GetAllCustomer());
+                return Ok(_starWarsBL.GetAllStores());
             }
             catch (SqlException)
             {
@@ -34,26 +33,27 @@ namespace StarWarsApi.Controllers
             }
         }
 
-        // GET: api/Customer/5
-        [HttpGet("CustomerLogin")]
-        public IActionResult Get(string _userName, string _password){
-        try
-        {
-            return Ok(_starWarsBL.CustomerLogin(_userName, _password));
-        }
-        catch (SqlException)
-        {
-            return NotFound();
-        }
-    }
-
-        // POST: api/Customer
-        [HttpPost("AddCustomer")]
-        public IActionResult Post([FromBody] Customer n_customer)
+        // GET: api/Store/5
+        [HttpGet("GetStoreByName/{storeName}")]
+        public IActionResult Get(string storeName)
         {
             try
             {
-                return Ok(_starWarsBL.AddCustomer(n_customer));
+                return Ok(_starWarsBL.SearchStoreFront(storeName));
+            }
+            catch (SqlException)
+            {
+                return NotFound();
+            }
+        }
+
+        // POST: api/Store
+        [HttpPost("AddStore")]
+        public IActionResult Post([FromBody] Storefront n_storeFront)
+        {
+            try
+            {
+                return Ok(_starWarsBL.AddStoreFront(n_storeFront));
             }
             catch (SqlException)
             {
@@ -61,14 +61,13 @@ namespace StarWarsApi.Controllers
             }
         }
 
-        // PUT: api/Customer/5
+        // PUT: api/Store/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
-
         }
 
-        // DELETE: api/Customer/5
+        // DELETE: api/Store/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

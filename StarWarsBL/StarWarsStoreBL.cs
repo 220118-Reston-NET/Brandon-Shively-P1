@@ -16,9 +16,16 @@ namespace StarWarsBL{
             return _repo.AddStoreFront(n_storeFront);
         }
 
-        public List<Order> CustomerOrder(int p_CustomerID)
+        public List<Customer> CustomerLogin(string p_userName, string p_password)
         {
-            List<Order> listOfCustomerOrders = _repo.CustomerOrder(p_CustomerID);
+            List<Customer> CustomerInformation = _repo.CustomerLogin(p_userName, p_password);
+            return CustomerInformation
+                .ToList();
+        }
+
+        public List<Order> CustomerOrder(int p_CustomerID, string p_orderMethod)
+        {
+            List<Order> listOfCustomerOrders = _repo.CustomerOrder(p_CustomerID, p_orderMethod);
             return listOfCustomerOrders
                 .ToList();
         }
@@ -44,6 +51,13 @@ namespace StarWarsBL{
         public List<Storefront> GetAllStores()
         {
             return _repo.GetAllStores();
+        }
+
+        public List<Manager> ManagerLogin(string p_userName, string p_password)
+        {
+            List<Manager> ManagerInformation = _repo.ManagerLogin(p_userName, p_password);
+            return ManagerInformation
+                .ToList();
         }
 
         public List<ShoppingCart> PlaceOrder(int p_ID, float p_Price, int p_Quantity, int p_StoreID, int p_CustomerID)
@@ -73,9 +87,9 @@ namespace StarWarsBL{
                 .ToList();
         }
 
-        public List<Order> StoreOrder(int p_StoreID)
+        public List<Order> StoreOrder(int p_StoreID, string p_orderMethod)
         {
-            List<Order> listOfStoreOrders = _repo.StoreOrder(p_StoreID);
+            List<Order> listOfStoreOrders = _repo.StoreOrder(p_StoreID, p_orderMethod);
             return listOfStoreOrders
                 .ToList();
         }

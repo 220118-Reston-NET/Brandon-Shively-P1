@@ -1,6 +1,5 @@
 namespace StarWarsModel{
     public class LineItems{
-        //build dictionary with StoreID key and ProductID value
         public int _productID { get; set; }
         public string _productName { get; set; }
         public float _productPrice { get; set; }
