@@ -9,9 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Brandon-Shively-P1
 
     
     steps:
@@ -34,4 +31,3 @@ jobs:
         app-name: StarWarsStore
         slot-name: 'Production'
         publish-profile: $${{secrets.AZURE_WEB_APP_PROFILE}}
-        package: Brandon-Shively-P1/publish
