@@ -57,7 +57,7 @@ jobs:
       shell: pwsh
       run: |
         .\.sonar\scanner\dotnet-sonarscanner begin /k:"220118-Reston-NET_Brandon-Shively-P1" /o:"220118-reston-net" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.exclusion="**StarWarsApi/wwwroot/lib/**" /d:sonar.cs.opencover.reeportsPaths="**/TestResults/**/coverage.opencover.xml" -d:sonar.vstest.reportsPath="**/TestResults/*trx"
-        run: dotnet build ./StarWarsApi -c Release
+        run: dotnet build StarWarsApi -c Release
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
    
     - name: Create Publish Folder
