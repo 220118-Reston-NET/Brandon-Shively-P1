@@ -5,6 +5,17 @@ namespace StarWarsTest;
 
 public class CustomerValueTest{
     [Fact]
+    public void CustomerIDValueTest(){
+        Customer _tCustomerID = new Customer();
+        int _validCustomerID = 1;
+
+        _tCustomerID._customerID = _validCustomerID;
+
+        Assert.NotNull(_tCustomerID._customerID);
+        Assert.Equal(_validCustomerID, _tCustomerID._customerID);
+    }
+    
+    [Fact]
     public void CustomerNameValueTest(){
         Customer _tName = new Customer();
         string _validName = "Hosea";
@@ -46,5 +57,27 @@ public class CustomerValueTest{
 
         Assert.NotNull(_tEmail);
         Assert.Equal(_validEmail, _tEmail.Email);
+    }
+    
+    [Fact]
+    public void CustomerUsernameValueTest(){
+        Customer _tUsername = new Customer();
+        string _validUsername = "Username";
+
+        _tUsername.UserName = _validUsername;
+
+        Assert.NotNull(_tUsername.UserName);
+        Assert.Equal(_validUsername, _tUsername.UserName);
+    }
+
+    [Fact]
+    public void CustomerPasswordValueTest(){
+        Customer _tPassword = new Customer();
+        string _validPassword = "Password";
+
+        _tPassword.Password = _validPassword;
+
+        Assert.NotNull(_tPassword.Password);
+        Assert.Equal(_validPassword, _tPassword.Password);
     }
 }
