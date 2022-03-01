@@ -60,12 +60,7 @@ namespace StarWarsApi.Controllers
         public IActionResult Put(int _storeID, int _addedQuantity, int _lineItemID)
         {
             try{
-                if(_authorization){
-                    return Ok(_starWarsBL.ReplenishInventory(_storeID, _addedQuantity, _lineItemID));
-                }
-                else{
-                    return Unauthorized();
-                }
+                return Ok(_starWarsBL.ReplenishInventory(_storeID, _addedQuantity, _lineItemID));
             }
             catch(SqlException){
                 return NotFound();

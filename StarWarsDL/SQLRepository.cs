@@ -29,12 +29,13 @@ namespace StarWarsDL
 
         public Storefront AddStoreFront(Storefront n_storeFront){
             string sqlQuery = @"insert into StoreFront
-                            values(@StoreName, @StoreAddress)";
+                            values(@StoreName, @StoreAddress, @ManagerID)";
             using (SqlConnection con = new SqlConnection(_connectionStrings)){
                 con.Open();
                 SqlCommand command = new SqlCommand(sqlQuery, con);
                 command.Parameters.AddWithValue("@StoreName", n_storeFront.Name);
                 command.Parameters.AddWithValue("@StoreAddress", n_storeFront.Address);
+                command.Parameters.AddWithValue("@ManagerID", n_storeFront.ManagerID);
 
                 command.ExecuteNonQuery();
             };
