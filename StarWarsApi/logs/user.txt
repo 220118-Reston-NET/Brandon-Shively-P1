@@ -1,0 +1,2 @@
+2022-03-01 16:56:41.106 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-01 16:56:41.113 -05:00 [INF] User successfully retrieved all customers.

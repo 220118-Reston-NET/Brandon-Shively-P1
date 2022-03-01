@@ -30,7 +30,7 @@ namespace StarWarsApi.Controllers
         [HttpGet("CustomerOrderHistory")]
         public IActionResult Get(int _customerID, string _orderMethod)
         {
-            Log.Information("Customer is attempting to view customer order history for Customer ID: "+_custoemrID);
+            Log.Information("Customer is attempting to view customer order history for Customer ID: "+_customerID);
             try
             {
                 Log.Information("Customer was succesful at viewing customer order history.");
