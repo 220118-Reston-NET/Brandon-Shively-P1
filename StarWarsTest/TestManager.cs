@@ -69,6 +69,7 @@ public class ManagerValueTest{
         Assert.Equal(_validPassword, _tPassword.Password);
     }
 
+    [Fact]
     public void ManagerStoreValueTest(){
         Manager _tStoreID = new Manager();
         int _validStoreID = 1;
