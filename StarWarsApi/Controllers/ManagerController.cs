@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Principal;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StarWarsBL;
 using StarWarsDL;
@@ -15,6 +15,7 @@ namespace StarWarsApi.Controllers
     [ApiController]
     public class ManagerController : ControllerBase
     {
+        private bool _authorization = false;
         private IStarWarsStoreBL _starWarsBL;
         public ManagerController(IStarWarsStoreBL p_starwarsBL){
             _starWarsBL = p_starwarsBL;
@@ -25,6 +26,7 @@ namespace StarWarsApi.Controllers
         {
             try
             {
+                _authorization = true;
                 return Ok(_starWarsBL.ManagerLogin(_userName, _password));
             }
             catch (SqlException)
@@ -39,12 +41,7 @@ namespace StarWarsApi.Controllers
         {
             try
             {
-                if(User.IsInRole("Manager")){
-                    return Ok(_starWarsBL.StoreOrder(_storeID, _orderMethod));
-                }
-                else{
-                    return Unauthorized();
-                }
+                return Ok(_starWarsBL.StoreOrder(_storeID, _orderMethod));
             }
             catch (SqlException)
             {
@@ -63,7 +60,12 @@ namespace StarWarsApi.Controllers
         public IActionResult Put(int _storeID, int _addedQuantity, int _lineItemID)
         {
             try{
-                return Ok(_starWarsBL.ReplenishInventory(_storeID, _addedQuantity, _lineItemID));
+                if(_authorization){
+                    return Ok(_starWarsBL.ReplenishInventory(_storeID, _addedQuantity, _lineItemID));
+                }
+                else{
+                    return Unauthorized();
+                }
             }
             catch(SqlException){
                 return NotFound();

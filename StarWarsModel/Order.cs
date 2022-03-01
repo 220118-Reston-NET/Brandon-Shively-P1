@@ -9,5 +9,6 @@ namespace StarWarsModel{
         public int _lineItemID { get; set; }
         public int _storeID { get; set; }
         public int _totalPrice { get; set; }
+        public DateTime _date { get; set; }
     }
 }

@@ -44,7 +44,7 @@ namespace StarWarsDL
         public List<Order> CustomerOrder(int p_CustomerID, string p_orderMethod)
         {
             List<Order> listOfCustomerOrder = new List<Order>();
-            string sqlQuery = @$"SELECT co.OrderID, sf.StoreName, p.ProductName, lico.Quantity, co.Total from StoreFront sf
+            string sqlQuery = @$"SELECT co.OrderID, sf.StoreName, co.OrderDate, p.ProductName, lico.Quantity, co.Total from StoreFront sf
                                 INNER JOIN CustomerOrder co on sf.StoreID = co.StoreID 
                                 INNER JOIN LineItems_CustomerOrders lico on co.OrderID = lico.OrderID 
                                 INNER JOIN LineItem li on lico.LineItemID = li.LineItemID 
@@ -59,9 +59,10 @@ namespace StarWarsDL
                     listOfCustomerOrder.Add(new Order(){
                         _orderID = reader.GetInt32(0),
                         _storeName = reader.GetString(1),
-                        _productName = reader.GetString(2),
-                        _quantity = reader.GetInt32(3),
-                        _totalPrice = reader.GetInt32(4),
+                        _date = reader.GetDateTime(2),
+                        _productName = reader.GetString(3),
+                        _quantity = reader.GetInt32(4),
+                        _totalPrice = reader.GetInt32(5),
                     });
                 }
             }
@@ -226,7 +227,7 @@ namespace StarWarsDL
         public List<Order> StoreOrder(int p_StoreID, string p_orderMethod)
         {
             List<Order> listOfCustomerOrder = new List<Order>();
-            string sqlQuery = @$"SELECT co.OrderID, c.CustomerName, p.ProductName, li.LineItemID, lico.Quantity, co.Total from Customer c
+            string sqlQuery = @$"SELECT co.OrderID, c.CustomerName, co.OrderDate, p.ProductName, li.LineItemID, lico.Quantity, co.Total from Customer c
                                 INNER JOIN CustomerOrder co on c.CustomerID = co.CustomerID 
                                 INNER JOIN LineItems_CustomerOrders lico on co.OrderID = lico.OrderID 
                                 INNER JOIN LineItem li on lico.LineItemID = li.LineItemID 
@@ -241,10 +242,11 @@ namespace StarWarsDL
                     listOfCustomerOrder.Add(new Order(){
                         _orderID = reader.GetInt32(0),
                         _customerName = reader.GetString(1),
-                        _productName = reader.GetString(2),
-                        _lineItemID = reader.GetInt32(3),
-                        _quantity = reader.GetInt32(4),
-                        _totalPrice = reader.GetInt32(5),
+                        _date = reader.GetDateTime(2),
+                        _productName = reader.GetString(3),
+                        _lineItemID = reader.GetInt32(4),
+                        _quantity = reader.GetInt32(5),
+                        _totalPrice = reader.GetInt32(6),
                     });
                 }
             }
