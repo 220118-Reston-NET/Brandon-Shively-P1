@@ -3,3 +3,4 @@ obj
 StarWarsUI/appsettings.json
 StarWarsApi/appsettings.json
 StarWarsApi/publish
+.vscode/settings.json
