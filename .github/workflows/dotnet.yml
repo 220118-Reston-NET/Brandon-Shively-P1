@@ -50,14 +50,15 @@ jobs:
         dotnet tool install dotnet-sonarscanner --version 5.5.3 --tool-path .\.sonar\scanner
     - name: Test
       run: dotnet test --logger trx --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format-opencover
+    
     - name: Build and analyze
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       shell: pwsh
       run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"220118-Reston-NET_Brandon-Shively-P1" /o:"220118-reston-net" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.coverage.exclusions=**/StarWarsApi/wwwroot/lib/**,**/**StarWarsDL/*.cs,**/StarWarsApi/Controllers/*.cs /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" -d:sonar.vstest.reportsPath="**/TestResults/*.trx"
-          dotnet build StarWarsApi -c Release
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"220118-Reston-NET_Brandon-Shively-P1" /o:"220118-reston-net" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" -d:sonar.vstest.reportsPath="**/TestResults/*.trx"
+          dotnet build ./StarWarsApi -c Release
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
    
     - name: Create Publish Folder
