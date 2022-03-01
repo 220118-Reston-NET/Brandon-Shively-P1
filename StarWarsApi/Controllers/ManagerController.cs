@@ -24,13 +24,15 @@ namespace StarWarsApi.Controllers
         [HttpGet]
         public IActionResult Get(string _userName, string _password)
         {
+            Log.Information("User is attempting to login as a manager using the creditials: Username: "+_userName+ " Password: "+ _password);
             try
             {
-                _authorization = true;
+                Log.Information("User was successful at logging in as a manager.");
                 return Ok(_starWarsBL.ManagerLogin(_userName, _password));
             }
             catch (SqlException)
             {
+                Log.Information("User failed to login as a manager.");
                 return NotFound();
             }
         }
@@ -39,12 +41,15 @@ namespace StarWarsApi.Controllers
         [HttpGet("StoreOrderHistory/")]
         public IActionResult Get(int _storeID, string _orderMethod)
         {
+            Log.Information("User is attempting to view store order history.");
             try
             {
+                Log.Information("User was successful at viewing store order history.");
                 return Ok(_starWarsBL.StoreOrder(_storeID, _orderMethod));
             }
             catch (SqlException)
             {
+                Log.Information("User failed to view store order history.");
                 return NotFound();
             }
         }
@@ -59,10 +64,13 @@ namespace StarWarsApi.Controllers
         [HttpPut("ReplenishStoreInventory")]
         public IActionResult Put(int _storeID, int _addedQuantity, int _lineItemID)
         {
+            Log.Information("Manager is attempting to replenish store inventory.");
             try{
+                Log.Information("Manager was successful at replenishing store inventory.");
                 return Ok(_starWarsBL.ReplenishInventory(_storeID, _addedQuantity, _lineItemID));
             }
             catch(SqlException){
+                Log.Information("User failed to replenish store inventory.");
                 return NotFound();
             }
         }

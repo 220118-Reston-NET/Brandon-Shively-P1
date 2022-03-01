@@ -23,12 +23,15 @@ namespace StarWarsApi.Controllers
         [HttpGet]
         public IActionResult GetAllStores()
         {
+            Log.Information("User is attempting to view all stores.");
             try
             {
+                Log.Information("User successfully viewed all stores.");
                 return Ok(_starWarsBL.GetAllStores());
             }
             catch (SqlException)
             {
+                Log.Information("User failed to view all stores.");
                 return NotFound();
             }
         }
@@ -37,12 +40,15 @@ namespace StarWarsApi.Controllers
         [HttpGet("GetStoreByName/{storeName}")]
         public IActionResult Get(string storeName)
         {
+            Log.Information("User is attempting to view the store: "+storeName);
             try
             {
+                Log.Information("User was successful at viewing the store.");
                 return Ok(_starWarsBL.SearchStoreFront(storeName));
             }
             catch (SqlException)
             {
+                Log.Information("User failed too view the store.");
                 return NotFound();
             }
         }
@@ -51,12 +57,15 @@ namespace StarWarsApi.Controllers
         [HttpPost("AddStore")]
         public IActionResult Post([FromBody] Storefront n_storeFront)
         {
+            Log.Information("User is attempting to add a store.");
             try
             {
+                Log.Information("User succeeded at addaing a store.");
                 return Ok(_starWarsBL.AddStoreFront(n_storeFront));
             }
             catch (SqlException)
             {
+                Log.Information("User failed to add a store.");
                 return Conflict();
             }
         }

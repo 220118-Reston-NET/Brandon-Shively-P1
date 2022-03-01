@@ -30,12 +30,15 @@ namespace StarWarsApi.Controllers
         [HttpGet("GetLineItems")]
         public IActionResult GetLineItems(int StoreID)
         {
+            Log.Information("User selected to see the line items for StoreID: "+StoreID);
             try
             {
+                Log.Information("User was successful at viewing line items.");
                 return Ok(_starWarsBL.GetAllLineItems(StoreID));
             }
             catch (SqlException)
             {
+                Log.Information("User failed to view line items.");
                 return NotFound();
             }
         }

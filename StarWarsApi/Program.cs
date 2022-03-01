@@ -1,8 +1,12 @@
+global using Serilog;
 using Microsoft.Extensions.Configuration;
 using StarWarsBL;
 using StarWarsDL;
 
 var builder = WebApplication.CreateBuilder(args);
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.File("./logs/user.txt")
+    .CreateLogger();
 
 // Add services to the container.
 
@@ -15,6 +19,7 @@ builder.Services.AddScoped<IRepository>(repo => new SQLRepository(builder.Config
 builder.Services.AddScoped<IStarWarsStoreBL, StarWarsStoreBL>();
 
 var app = builder.Build();
+var log = new LoggerConfiguration();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

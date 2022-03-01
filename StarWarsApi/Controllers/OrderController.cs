@@ -30,12 +30,15 @@ namespace StarWarsApi.Controllers
         [HttpGet("CustomerOrderHistory")]
         public IActionResult Get(int _customerID, string _orderMethod)
         {
+            Log.Information("Customer is attempting to view customer order history for Customer ID: "+_custoemrID);
             try
             {
+                Log.Information("Customer was succesful at viewing customer order history.");
                 return Ok(_starWarsBL.CustomerOrder(_customerID, _orderMethod));
             }
             catch (SqlException)
             {
+                Log.Information("Customer failed to view customer order history.");
                 return NotFound();
             }
         }
@@ -44,10 +47,13 @@ namespace StarWarsApi.Controllers
         [HttpPost ("PlaceOrder")]
         public IActionResult Post([FromBody] Order p_order)
         {
+            Log.Information("Customer is attempting to place an order.");
             try{
+                Log.Information("Customer was successful at placing an order.");
                 return Ok(_starWarsBL.PlaceOrder(p_order._lineItemID, p_order._totalPrice, p_order._quantity, p_order._storeID, p_order._customerID));
             }
             catch(SqlException){
+                Log.Information("Customer failded at placing an order.");
                 return Conflict();
             }        
         }

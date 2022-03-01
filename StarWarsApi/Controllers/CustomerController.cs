@@ -24,12 +24,15 @@ namespace StarWarsApi.Controllers
         [HttpGet("GetAll")]
         public IActionResult GetAllCustomers()
         {
+            Log.Information("User is attempting to retrieve all customers.");
             try
             {
+                Log.Information("User successfully retrieved all customers.");
                 return Ok(_starWarsBL.GetAllCustomer());
             }
             catch (SqlException)
             {
+                Log.Information("User failed to retrieve all customers.");
                 return NotFound();
             }
         }
@@ -37,12 +40,15 @@ namespace StarWarsApi.Controllers
         // GET: api/Customer/5
         [HttpGet("CustomerLogin")]
         public IActionResult Get(string _userName, string _password){
+        Log.Information("User is attempting to login as a select customer.");
         try
         {
+            Log.Information("User is successful at logging in under a set customer.");
             return Ok(_starWarsBL.CustomerLogin(_userName, _password));
         }
         catch (SqlException)
         {
+            Log.Information("User failed to login as a set customer.");
             return NotFound();
         }
     }
@@ -51,12 +57,15 @@ namespace StarWarsApi.Controllers
         [HttpPost("AddCustomer")]
         public IActionResult Post([FromBody] Customer n_customer)
         {
+            Log.Information("User is attempting to add a new customer.");
             try
             {
+                Log.Information("User was successful at Adding a new customer.");
                 return Ok(_starWarsBL.AddCustomer(n_customer));
             }
             catch (SqlException)
             {
+                Log.Information("User failed to add a new customer.");
                 return Conflict();
             }
         }
