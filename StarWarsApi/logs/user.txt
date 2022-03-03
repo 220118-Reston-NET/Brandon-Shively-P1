@@ -1,2 +1,86 @@
 2022-03-01 16:56:41.106 -05:00 [INF] User is attempting to retrieve all customers.
 2022-03-01 16:56:41.113 -05:00 [INF] User successfully retrieved all customers.
+2022-03-01 16:57:49.615 -05:00 [INF] User is attempting to login as a select customer.
+2022-03-01 16:57:49.621 -05:00 [INF] User is successful at logging in under a set customer.
+2022-03-01 16:58:39.249 -05:00 [INF] User is attempting to login as a select customer.
+2022-03-01 16:58:39.256 -05:00 [INF] User is successful at logging in under a set customer.
+2022-03-01 17:00:24.549 -05:00 [INF] User is attempting to view store order history.
+2022-03-01 17:00:24.556 -05:00 [INF] User was successful at viewing store order history.
+2022-03-01 17:00:45.551 -05:00 [INF] User is attempting to view store order history.
+2022-03-01 17:00:45.551 -05:00 [INF] User was successful at viewing store order history.
+2022-03-01 17:04:03.378 -05:00 [INF] Customer is attempting to view customer order history for Customer ID: 25
+2022-03-01 17:04:03.384 -05:00 [INF] Customer was succesful at viewing customer order history.
+2022-03-01 17:29:37.517 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-01 17:29:37.517 -05:00 [INF] User successfully retrieved all customers.
+2022-03-02 07:41:20.176 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-02 07:41:20.185 -05:00 [INF] User successfully retrieved all customers.
+2022-03-02 07:41:20.656 -05:00 [INF] User failed to retrieve all customers.
+2022-03-02 07:41:55.618 -05:00 [INF] User is attempting to login as a select customer.
+2022-03-02 07:41:55.618 -05:00 [INF] User is successful at logging in under a set customer.
+2022-03-02 07:41:55.928 -05:00 [INF] User failed to login as a set customer.
+2022-03-02 07:43:34.919 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-02 07:43:34.919 -05:00 [INF] User successfully retrieved all customers.
+2022-03-02 07:43:40.718 -05:00 [INF] User is attempting to login as a select customer.
+2022-03-02 07:43:40.718 -05:00 [INF] User is successful at logging in under a set customer.
+2022-03-02 07:47:49.248 -05:00 [INF] Customer is attempting to place an order.
+2022-03-02 07:47:49.254 -05:00 [INF] Customer was successful at placing an order.
+2022-03-02 07:48:09.700 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-02 07:48:09.700 -05:00 [INF] User successfully retrieved all customers.
+2022-03-02 07:48:49.472 -05:00 [INF] Customer is attempting to place an order.
+2022-03-02 07:48:49.472 -05:00 [INF] Customer was successful at placing an order.
+2022-03-02 07:49:42.894 -05:00 [INF] Customer is attempting to place an order.
+2022-03-02 07:49:42.895 -05:00 [INF] Customer was successful at placing an order.
+2022-03-02 07:50:11.117 -05:00 [INF] Customer is attempting to place an order.
+2022-03-02 07:50:11.123 -05:00 [INF] Customer was successful at placing an order.
+2022-03-02 07:51:18.852 -05:00 [INF] Customer is attempting to place an order.
+2022-03-02 07:51:18.852 -05:00 [INF] Customer was successful at placing an order.
+2022-03-02 07:51:18.955 -05:00 [INF] Customer failded at placing an order.
+2022-03-02 10:14:08.731 -05:00 [INF] User is attempting to login as a manager using the creditials: Username: IAmSteve Password: SteveSteveSteve
+2022-03-02 10:14:08.731 -05:00 [INF] User was successful at logging in as a manager.
+2022-03-02 10:14:20.195 -05:00 [INF] User is attempting to view store order history.
+2022-03-02 10:14:20.196 -05:00 [INF] User was successful at viewing store order history.
+2022-03-02 10:15:22.261 -05:00 [INF] Customer is attempting to view customer order history for Customer ID: 1
+2022-03-02 10:15:22.261 -05:00 [INF] Customer was succesful at viewing customer order history.
+2022-03-02 10:18:00.869 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-02 10:18:00.869 -05:00 [INF] User successfully retrieved all customers.
+2022-03-02 10:18:01.586 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-02 10:18:01.586 -05:00 [INF] User successfully retrieved all customers.
+2022-03-02 10:18:02.266 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-02 10:18:02.266 -05:00 [INF] User successfully retrieved all customers.
+2022-03-02 10:18:03.114 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-02 10:18:03.114 -05:00 [INF] User successfully retrieved all customers.
+2022-03-02 11:26:33.984 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-02 11:26:33.984 -05:00 [INF] User successfully retrieved all customers.
+2022-03-02 14:16:32.473 -05:00 [INF] User is attempting to retrieve all customers.
+2022-03-02 14:16:32.480 -05:00 [INF] User successfully retrieved all customers.
+2022-03-02 14:16:57.425 -05:00 [INF] User is attempting to login as a select customer.
+2022-03-02 14:16:57.425 -05:00 [INF] User is successful at logging in under a set customer.
+2022-03-02 14:17:16.731 -05:00 [INF] User is attempting to add a new customer.
+2022-03-02 14:17:16.731 -05:00 [INF] User was successful at Adding a new customer.
+2022-03-02 14:18:11.873 -05:00 [INF] Customer is attempting to view customer order history for Customer ID: 1
+2022-03-02 14:18:11.873 -05:00 [INF] Customer was succesful at viewing customer order history.
+2022-03-02 14:18:49.498 -05:00 [INF] Customer is attempting to view customer order history for Customer ID: 1
+2022-03-02 14:18:49.498 -05:00 [INF] Customer was succesful at viewing customer order history.
+2022-03-02 14:19:10.006 -05:00 [INF] User is attempting to login as a manager using the creditials: Username: IAmSteve Password: SteveSteveSteve
+2022-03-02 14:19:10.006 -05:00 [INF] User was successful at logging in as a manager.
+2022-03-02 14:19:27.733 -05:00 [INF] User is attempting to view store order history.
+2022-03-02 14:19:27.733 -05:00 [INF] User was successful at viewing store order history.
+2022-03-02 14:19:38.273 -05:00 [INF] User is attempting to view store order history.
+2022-03-02 14:19:38.273 -05:00 [INF] User was successful at viewing store order history.
+2022-03-02 14:20:34.032 -05:00 [INF] Manager is attempting to replenish store inventory.
+2022-03-02 14:20:34.032 -05:00 [INF] Manager was successful at replenishing store inventory.
+2022-03-02 14:21:26.333 -05:00 [INF] Customer is attempting to place an order.
+2022-03-02 14:21:26.333 -05:00 [INF] Customer was successful at placing an order.
+2022-03-02 14:22:11.365 -05:00 [INF] Customer is attempting to place an order.
+2022-03-02 14:22:11.365 -05:00 [INF] Customer was successful at placing an order.
+2022-03-02 14:22:11.437 -05:00 [INF] Customer failded at placing an order.
+2022-03-02 14:22:27.620 -05:00 [INF] User is attempting to view the store: Fairbanks
+2022-03-02 14:22:27.620 -05:00 [INF] User was successful at viewing the store.
+2022-03-02 14:23:06.982 -05:00 [INF] User is attempting to add a store.
+2022-03-02 14:23:06.982 -05:00 [INF] User succeeded at addaing a store.
+2022-03-02 14:23:31.093 -05:00 [INF] User selected to see the line items for StoreID: 1
+2022-03-02 14:23:31.093 -05:00 [INF] User was successful at viewing line items.
+2022-03-02 14:24:18.610 -05:00 [INF] User is attempting to view store order history.
+2022-03-02 14:24:18.610 -05:00 [INF] User was successful at viewing store order history.
+2022-03-02 14:24:31.723 -05:00 [INF] User is attempting to view store order history.
+2022-03-02 14:24:31.723 -05:00 [INF] User was successful at viewing store order history.

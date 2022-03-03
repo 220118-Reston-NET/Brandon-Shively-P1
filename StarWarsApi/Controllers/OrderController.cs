@@ -45,12 +45,16 @@ namespace StarWarsApi.Controllers
 
         // POST: api/Order
         [HttpPost ("PlaceOrder")]
-        public IActionResult Post([FromBody] Order p_order)
+        public IActionResult Post([FromBody] List<Order> p_order)
         {
             Log.Information("Customer is attempting to place an order.");
             try{
                 Log.Information("Customer was successful at placing an order.");
-                return Ok(_starWarsBL.PlaceOrder(p_order._lineItemID, p_order._totalPrice, p_order._quantity, p_order._storeID, p_order._customerID));
+                foreach (var item in p_order)
+                {
+                    _starWarsBL.PlaceOrder(item._lineItemID, item._totalPrice, item._quantity, item._storeID, item._customerID);
+                }
+                return Ok();
             }
             catch(SqlException){
                 Log.Information("Customer failded at placing an order.");
